@@ -1,69 +1,1090 @@
+
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regulamin Korzystania (Terms of Use / EULA) – LifePilot AI</title>
+
+    <title>Terms of Use / EULA – LifePilot AI</title>
+
+    <meta
+        name="description"
+        content="Terms of Use and End User License Agreement for the LifePilot AI application."
+    >
+
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #34483A; background-color: #F5F3ED; padding: 20px; max-width: 900px; margin: 0 auto; }
-        h1 { color: #244638; font-size: 28px; border-bottom: 2px solid #E7E8DE; padding-bottom: 10px; }
-        h2 { color: #244638; font-size: 18px; margin-top: 28px; }
-        p, li { font-size: 14px; color: #657568; }
-        ul { padding-left: 20px; }
-        .container { background: #FFFFFF; padding: 40px; border-radius: 18px; border: 1px solid #E7E8DE; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
-        .contact-box { background: #E8EEE6; border: 1px solid #D5DFD3; padding: 20px; border-radius: 12px; margin-top: 24px; }
-        .contact-box p { margin: 8px 0; font-weight: 600; color: #244638; }
-        .lang-section { margin-top: 40px; border-top: 1px solid #E7E8DE; padding-top: 30px; }
+        :root {
+            --background: #F5F3ED;
+            --surface: #FFFFFF;
+            --primary: #244638;
+            --text: #34483A;
+            --muted: #657568;
+            --border: #E7E8DE;
+            --contact-background: #E8EEE6;
+            --contact-border: #D5DFD3;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            line-height: 1.7;
+            color: var(--text);
+            background-color: var(--background);
+
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background: var(--surface);
+            padding: 40px;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--primary);
+            line-height: 1.4;
+        }
+
+        h1 {
+            font-size: 30px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 14px;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 21px;
+            margin-top: 36px;
+        }
+
+        h3 {
+            font-size: 17px;
+            margin-top: 24px;
+        }
+
+        p,
+        li {
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        ul,
+        ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+            overflow-wrap: anywhere;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        .last-updated {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 28px;
+        }
+
+        .contact-box {
+            background: var(--contact-background);
+            border: 1px solid var(--contact-border);
+            padding: 22px;
+            border-radius: 12px;
+            margin-top: 24px;
+        }
+
+        .contact-box p {
+            margin: 8px 0;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .notice {
+            background: #F5F3ED;
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 6px;
+        }
+
+        .notice p {
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--muted);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                padding: 22px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            p,
+            li {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
+
 <body>
 <div class="container">
-    <h1>Regulamin Korzystania (Terms of Use / EULA)</h1>
-    <p><strong>Ostatnia aktualizacja / Last updated:</strong> 28 października 2026 r.</p>
 
-    <p>Niniejszy Regulamin określa szczegółowe warunki korzystania z aplikacji mobilnej <strong>LifePilot AI</strong> (zwanej dalej „Aplikacją”). Pobierając, instalując lub korzystając z Aplikacji, oświadczasz, że zapoznałeś się z niniejszym dokumentem, rozumiesz go i w pełni go akceptujesz.</p>
+    <h1>Terms of Use (End User License Agreement – EULA)</h1>
 
-    <h2>1. Postanowienia ogólne i Licencja</h2>
-    <p>Aplikacja jest udostępniana użytkownikom na zasadzie ograniczonej, niewyłącznej, nieprzenoszalnej licencji do użytku osobistego i niekomercyjnego. Wszelkie prawa własności intelektualnej do kodu, interfejsu i marki LifePilot AI należą do twórców Aplikacji.</p>
+    <p class="last-updated">
+        <strong>Last updated:</strong> October 28, 2026
+    </p>
 
-    <h2>2. Model subskrypcji, płatności i zwroty (In-App Purchases)</h2>
+    <p>
+        Please read these Terms of Use ("Terms", "Terms of Use") carefully
+        before using the <strong>LifePilot AI</strong> mobile application
+        (the "Service") operated by LifePilot AI ("us", "we", "our").
+    </p>
+
+    <p>
+        By downloading, installing, accessing, or using the Application,
+        you agree to be bound by these Terms. If you disagree with any
+        part of these Terms, you may not access or use the Service.
+    </p>
+
+    <div class="notice">
+        <p>
+            These Terms are intended to apply internationally. Mandatory
+            consumer protection rights under the laws applicable to you
+            remain unaffected.
+        </p>
+    </div>
+
+    <h2>1. Acceptance of Terms</h2>
+
+    <p>
+        These Terms constitute a legally binding agreement between you
+        and the legal operator of LifePilot AI concerning your use of
+        the Application.
+    </p>
+
+    <p>
+        By using the Service, you acknowledge that you have read,
+        understood, and agree to these Terms and our Privacy Policy.
+    </p>
+
+    <h2>2. Eligibility and Age Requirements</h2>
+
+    <p>
+        You may use the Service only if you are legally capable of
+        entering into a binding agreement under the laws applicable
+        to you.
+    </p>
+
+    <p>
+        The Service is not intended for children under the age of 13.
+        If you are under the age of 18, or the age of majority in
+        your jurisdiction, you may use the Service only with the
+        involvement and consent of a parent or legal guardian where
+        required by applicable law.
+    </p>
+
+    <p>
+        We may restrict or terminate access if we reasonably believe
+        that a User does not meet the applicable age requirements.
+    </p>
+
+    <h2>3. Description of the Service</h2>
+
+    <p>
+        LifePilot AI is a digital productivity and lifestyle application
+        designed to help Users organise aspects of their daily lives.
+    </p>
+
+    <p>Depending on your device, location, subscription plan, and feature availability, the Service may include:</p>
+
     <ul>
-        <li><strong>Dostęp Free i PRO:</strong> Aplikacja oferuje podstawowy model bezpłatny oraz opcjonalny plan subskrypcyjny o pełnej funkcjonalności (<strong>LifePilot PRO</strong>).</li>
-        <li><strong>Przetwarzanie płatności:</strong> Wszystkie transakcje, opłaty za subskrypcje oraz odnowienia są obsługiwane w sposób bezpieczny i bezpośredni przez <strong>Apple App Store</strong> oraz <strong>Google Play Store</strong> przy udziale platformy RevenueCat.</li>
-        <li><strong>Automatyczne odnawianie:</strong> Subskrypcje odnawiają się automatycznie na kolejny okres rozliczeniowy, chyba że zostaną anulowane na co najmniej 24 godziny przed końcem bieżącego okresu w ustawieniach konta użytkownika w sklepie (Apple ID / Google Play).</li>
-        <li><strong>Brak okresu próbnego:</strong> Zakup subskrypcji wiąże się z natychmiastowym pobraniem opłaty zgodnie z wybranym planem (brak darmowego okresu próbnego, chyba że zorganizowano osobną, oficjalną promocję w sklepie).</li>
-        <li><strong>Zwroty kosztów:</strong> Ponieważ płatności są obsługiwane bezpośrednio przez Apple lub Google, wszelkie wnioski o zwrot środków muszą być kierowane bezpośrednio do odpowiedniego sklepu (np. poprzez wsparcie Apple / raportowanie problemu w App Store), zgodnie z ich regulaminami zwrotów.</li>
+        <li>AI-powered conversational assistance;</li>
+        <li>personal organisation and planning tools;</li>
+        <li>task and routine management;</li>
+        <li>reminders and notification features;</li>
+        <li>lifestyle and habit-related tools;</li>
+        <li>dietary and wellness-related suggestions;</li>
+        <li>financial tracking and budgeting tools;</li>
+        <li>modules designed to support daily life;</li>
+        <li>account and profile management;</li>
+        <li>language selection and localisation;</li>
+        <li>subscription-based premium features.</li>
     </ul>
 
-    <h2>3. Zasady korzystania z Asystenta AI i usług</h2>
+    <p>
+        Features may require an account, internet connection, device
+        permissions, a supported operating system, or a subscription.
+    </p>
+
+    <p>
+        We may add, modify, improve, restrict, or discontinue features,
+        subject to applicable law and any rights you may have under
+        a paid subscription or consumer protection legislation.
+    </p>
+
+    <h2>4. Account Registration and Security</h2>
+
+    <p>
+        Certain features may require you to create an account.
+        You agree to provide accurate information and keep your
+        account credentials confidential.
+    </p>
+
+    <p>
+        You are responsible for activities conducted through your
+        account, except to the extent that applicable law provides
+        otherwise or the activity results from our failure to take
+        legally required security measures.
+    </p>
+
+    <p>
+        You must notify us if you suspect unauthorised access to
+        your account.
+    </p>
+
+    <h2>5. Account Management and Deletion</h2>
+
+    <p>
+        You may manage certain account details through the profile
+        or account settings available in the Application.
+    </p>
+
+    <p>
+        Where account deletion is available, you may initiate a
+        request using the designated in-app process or another
+        method made available by us.
+    </p>
+
+    <p>
+        When an account deletion request is completed, we will
+        delete or anonymise personal data associated with the
+        account, subject to applicable legal retention requirements,
+        legitimate requirements to establish or defend legal claims,
+        and other lawful grounds described in our Privacy Policy.
+    </p>
+
+    <p>
+        Deleting your LifePilot AI account does not necessarily
+        cancel a subscription purchased through Apple App Store,
+        Google Play Store, or another third-party payment provider.
+        You are responsible for cancelling recurring subscriptions
+        through the relevant provider unless another valid
+        cancellation process is available.
+    </p>
+
+    <h2>6. License to Use the Application</h2>
+
+    <p>
+        Subject to your compliance with these Terms, LifePilot AI
+        grants you a limited, personal, non-exclusive,
+        non-transferable, non-sublicensable, and revocable licence
+        to use the Application for your personal, lawful,
+        non-commercial purposes.
+    </p>
+
+    <p>
+        This licence does not transfer ownership of the Application
+        or any intellectual property rights to you.
+    </p>
+
+    <p>You may not:</p>
+
     <ul>
-        <li>Użytkownik zobowiązuje się do korzystania z Aplikacji w sposób zgodny z prawem, dobrymi obyczajami oraz niniejszym regulaminem.</li>
-        <li>Zabrania się wprowadzania do modułów AI treści niezgodnych z prawem, nawołujących do nienawiści, naruszających dobra osobiste innych osób lub próbujących zakłócić działanie serwerów Aplikacji.</li>
-        <li>Wszystkie porady finansowe, dietetyczne czy treningowe generowane przez algorytmy AI mają wyłącznie charakter poglądowy, edukacyjny i organizacyjny. Nie stanowią one oficjalnej porady medycznej ani profesjonalnego doradztwa finansowego.</li>
+        <li>copy, reproduce, or distribute the Application except as permitted by law;</li>
+        <li>modify, adapt, or create derivative works from the Application;</li>
+        <li>reverse engineer, decompile, or disassemble the Application except where applicable law expressly permits it;</li>
+        <li>remove copyright, trademark, or proprietary notices;</li>
+        <li>sell, rent, lease, sublicense, or commercially exploit the Application without written permission;</li>
+        <li>use the Application to develop a competing service in a manner that violates applicable law or our intellectual property rights.</li>
     </ul>
 
-    <h2>4. Ograniczenie odpowiedzialności</h2>
-    <p>Twórcy Aplikacji dokładają starań, aby jej działanie było niezawodne, jednak Aplikacja dostarczana jest w stanie „takim, jakim jest” (as is). Nie ponosimy odpowiedzialności za ewentualne straty finansowe, zdrowotne czy techniczne wynikające z niewłaściwego korzystania z podpowiedzi generowanych przez system.</p>
+    <h2>7. Artificial Intelligence Features</h2>
 
-    <h2>5. Pomoc techniczna i Kontakt / Support</h2>
+    <p>
+        The Service may include artificial intelligence ("AI")
+        systems that generate responses, suggestions, summaries,
+        plans, recommendations, or other content.
+    </p>
+
+    <p>
+        AI-generated content may be inaccurate, incomplete,
+        outdated, misleading, or unsuitable for your particular
+        circumstances.
+    </p>
+
+    <p>
+        AI-generated content is not guaranteed to be correct,
+        complete, reliable, or available. You should independently
+        evaluate AI-generated content before relying on it.
+    </p>
+
+    <p>
+        The AI Assistant is a software-based system. It is not
+        a human being and does not possess professional
+        qualifications or independent professional judgement.
+    </p>
+
+    <p>
+        Where required by applicable law, we will inform Users
+        that they are interacting with an AI system.
+    </p>
+
+    <h3>7.1 AI limitations</h3>
+
+    <p>AI systems may:</p>
+
+    <ul>
+        <li>misunderstand your request;</li>
+        <li>produce incorrect calculations or summaries;</li>
+        <li>generate inaccurate statements;</li>
+        <li>omit relevant information;</li>
+        <li>provide inconsistent answers;</li>
+        <li>reflect limitations or biases in the underlying technology;</li>
+        <li>fail to recognise an emergency or a situation requiring professional intervention.</li>
+    </ul>
+
+    <p>
+        You are responsible for reviewing information generated
+        by the Service before using it to make decisions.
+    </p>
+
+    <h2>8. No Professional Advice</h2>
+
+    <p>
+        LifePilot AI may provide organisational, lifestyle,
+        dietary, wellness, financial tracking, or other
+        informational tools.
+    </p>
+
+    <p>
+        Unless expressly stated otherwise, the Service does not
+        provide professional medical, nutritional, psychological,
+        legal, tax, investment, accounting, or financial advice.
+    </p>
+
+    <h3>8.1 Health, wellness, and dietary information</h3>
+
+    <p>
+        Health, wellness, dietary, exercise, and lifestyle-related
+        information is provided for general informational and
+        educational purposes only.
+    </p>
+
+    <p>
+        The Service is not intended to diagnose, treat, cure,
+        or prevent any disease, and is not a substitute for
+        consultation with a qualified healthcare professional.
+    </p>
+
+    <p>
+        Consult a qualified healthcare professional before making
+        significant changes to your diet, exercise, medication,
+        or health-related routine.
+    </p>
+
+    <p>
+        Do not disregard professional medical advice or delay
+        seeking medical attention because of information
+        provided by the Service.
+    </p>
+
+    <p>
+        If you believe you are experiencing a medical emergency,
+        contact your local emergency services immediately.
+    </p>
+
+    <h3>8.2 Financial tools</h3>
+
+    <p>
+        Financial tracking, budgeting, or expense organisation
+        features are intended to help you organise information.
+    </p>
+
+    <p>
+        Unless expressly stated otherwise, the Service does not
+        provide regulated financial advice, investment recommendations,
+        brokerage services, banking services, or tax advice.
+    </p>
+
+    <p>
+        You are responsible for verifying financial information
+        and making your own financial decisions.
+    </p>
+
+    <h2>9. Reminders and Notifications</h2>
+
+    <p>
+        The Service may provide reminders, alerts, notifications,
+        or scheduling features.
+    </p>
+
+    <p>
+        Notifications may depend on device settings, operating
+        system permissions, internet connectivity, battery
+        optimisation settings, third-party notification services,
+        and the availability of the Service.
+    </p>
+
+    <p>
+        We do not guarantee that every reminder or notification
+        will be delivered at the exact time requested.
+    </p>
+
+    <p>
+        You are responsible for independently checking important
+        dates, deadlines, appointments, payments, and other
+        time-sensitive matters.
+    </p>
+
+    <p>
+        The Service must not be relied upon as the sole means
+        of receiving emergency alerts, medical reminders,
+        legally required notices, or other critical notifications.
+    </p>
+
+    <h2>10. User Content</h2>
+
+    <p>
+        "User Content" means information, text, prompts, notes,
+        preferences, records, or other material that you submit,
+        upload, create, or store through the Service.
+    </p>
+
+    <p>
+        You retain ownership of your User Content, subject to
+        any rights necessary to operate the Service and any
+        rights of third parties.
+    </p>
+
+    <p>
+        You grant us a limited, non-exclusive licence to host,
+        process, transmit, display, and otherwise use your
+        User Content only as reasonably necessary to provide,
+        maintain, secure, and improve the Service, subject to
+        our Privacy Policy and applicable law.
+    </p>
+
+    <p>
+        You are responsible for ensuring that information
+        you submit is accurate to the best of your knowledge
+        and that you have the right to provide it.
+    </p>
+
+    <h2>11. Prohibited Use</h2>
+
+    <p>You agree not to use the Service to:</p>
+
+    <ul>
+        <li>violate applicable laws or regulations;</li>
+        <li>engage in fraud, identity theft, or deceptive activity;</li>
+        <li>threaten, harass, abuse, or unlawfully discriminate against another person;</li>
+        <li>distribute malware, viruses, or harmful code;</li>
+        <li>interfere with the operation, security, or integrity of the Service;</li>
+        <li>attempt to gain unauthorised access to accounts, systems, or data;</li>
+        <li>infringe intellectual property rights;</li>
+        <li>generate or distribute unlawful content;</li>
+        <li>circumvent subscription restrictions, usage limits, or security measures;</li>
+        <li>impersonate LifePilot AI or another person;</li>
+        <li>damage, disable, overburden, or impair the Service.</li>
+    </ul>
+
+    <h2>12. Subscriptions and LifePilot PRO</h2>
+
+    <p>
+        The Service may be offered through a freemium model.
+        Certain features may be available without payment,
+        while additional features may require a paid
+        subscription known as "LifePilot PRO".
+    </p>
+
+    <p>
+        Subscription features, prices, billing periods,
+        and availability may vary by country, platform,
+        promotion, and purchase method.
+    </p>
+
+    <h3>12.1 Subscription purchase</h3>
+
+    <p>
+        Subscriptions may be purchased through Apple App Store,
+        Google Play Store, or other authorised payment providers
+        made available by us.
+    </p>
+
+    <p>
+        Purchases made through Apple or Google are subject
+        to the applicable platform's payment and subscription
+        terms.
+    </p>
+
+    <p>
+        RevenueCat may be used as subscription management
+        infrastructure. The seller and payment provider
+        depend on the purchase channel.
+    </p>
+
+    <h3>12.2 Subscription pricing</h3>
+
+    <p>
+        The price, currency, billing interval, and applicable
+        taxes will be presented before you confirm a purchase.
+    </p>
+
+    <p>
+        You agree to pay the price displayed at the time
+        of purchase.
+    </p>
+
+    <h3>12.3 Automatic renewal</h3>
+
+    <p>
+        Unless the applicable subscription offer states otherwise,
+        subscriptions may renew automatically for successive
+        billing periods.
+    </p>
+
+    <p>
+        The renewal terms, renewal price, and billing frequency
+        will be displayed before purchase.
+    </p>
+
+    <p>
+        You may cancel automatic renewal through the relevant
+        payment provider.
+    </p>
+
+    <h3>12.4 Subscription cancellation</h3>
+
+    <p>
+        You may cancel a subscription through the account
+        settings of the platform through which you purchased it.
+    </p>
+
+    <p>
+        Uninstalling the Application does not necessarily
+        cancel a subscription.
+    </p>
+
+    <p>
+        Deleting your LifePilot AI account does not necessarily
+        cancel a subscription.
+    </p>
+
+    <h3>12.5 Free trials and promotional offers</h3>
+
+    <p>
+        A free trial or promotional offer may be available
+        where expressly stated.
+    </p>
+
+    <p>
+        The duration, eligibility, and conditions of a
+        promotion will be disclosed before you accept it.
+    </p>
+
+    <h3>12.6 Refunds</h3>
+
+    <p>
+        Refund requests for purchases made through Apple App Store
+        or Google Play Store should generally be submitted to
+        the relevant platform, subject to its procedures.
+    </p>
+
+    <p>
+        Nothing in these Terms excludes or limits any refund,
+        withdrawal, remedy, or consumer right that is mandatory
+        under applicable law.
+    </p>
+
+    <h2>13. European Union Consumer Rights</h2>
+
+    <p>
+        If you are a consumer residing in the European Union
+        or European Economic Area, you may have mandatory
+        rights under applicable consumer protection legislation.
+    </p>
+
+    <p>
+        These rights may include pre-contractual information
+        rights, rights concerning digital content and digital
+        services, remedies where services do not conform
+        to the contract, and a right to withdraw from
+        certain distance contracts.
+    </p>
+
+    <p>
+        Nothing in these Terms is intended to exclude,
+        waive, or restrict mandatory consumer rights.
+    </p>
+
+    <h3>13.1 Right of withdrawal</h3>
+
+    <p>
+        Where applicable, consumers may have a statutory
+        right to withdraw from a distance contract within
+        14 days, subject to applicable law and exceptions.
+    </p>
+
+    <p>
+        The precise rules may depend on whether the purchase
+        concerns digital content, a digital service, or
+        another type of contract.
+    </p>
+
+    <p>
+        Any required withdrawal information, consent,
+        acknowledgement, or confirmation must be provided
+        through the appropriate purchase process.
+    </p>
+
+    <h3>13.2 Digital content and digital services</h3>
+
+    <p>
+        Where applicable, we will comply with mandatory
+        legal requirements concerning conformity,
+        functionality, compatibility, updates, and remedies
+        for digital content and digital services.
+    </p>
+
+    <h2>14. Users Outside the European Union</h2>
+
+    <p>
+        If you use the Service outside the European Union
+        or European Economic Area, your use may be subject
+        to local consumer protection, privacy, subscription,
+        and digital services laws.
+    </p>
+
+    <p>
+        Nothing in these Terms is intended to waive rights
+        that cannot lawfully be waived.
+    </p>
+
+    <h3>14.1 United Kingdom</h3>
+
+    <p>
+        If you are a consumer in the United Kingdom,
+        mandatory rights under applicable UK consumer
+        legislation remain unaffected.
+    </p>
+
+    <h3>14.2 United States</h3>
+
+    <p>
+        If you are a consumer in the United States,
+        applicable federal and state consumer protection
+        laws remain unaffected.
+    </p>
+
+    <p>
+        Certain states may provide additional rights
+        concerning privacy, subscription renewals,
+        cancellation, refunds, or consumer complaints.
+    </p>
+
+    <h3>14.3 Other jurisdictions</h3>
+
+    <p>
+        Users in other countries may have additional
+        rights under local law.
+    </p>
+
+    <p>
+        Where mandatory local law applies, these Terms
+        will be interpreted consistently with that law
+        to the extent required.
+    </p>
+
+    <h2>15. Privacy and Personal Data</h2>
+
+    <p>
+        Our collection, use, storage, disclosure, and
+        other processing of personal data is described
+        in our Privacy Policy.
+    </p>
+
+    <p>
+        Depending on the features you use, we may process
+        account and profile information, preferences,
+        information submitted to AI features, task and
+        reminder information, subscription status,
+        and technical or diagnostic information.
+    </p>
+
+    <p>
+        Where applicable, we will comply with the
+        General Data Protection Regulation (GDPR),
+        the UK GDPR, and other relevant privacy laws.
+    </p>
+
+    <h2>16. Third-Party Services</h2>
+
+    <p>
+        The Service may integrate with or rely on
+        third-party services, including Apple App Store,
+        Google Play Store, RevenueCat, cloud hosting
+        providers, authentication providers, AI
+        infrastructure providers, analytics providers,
+        and notification providers.
+    </p>
+
+    <p>
+        Third-party services may be governed by their
+        own terms and privacy policies.
+    </p>
+
+    <p>
+        This provision does not exclude our responsibility
+        for obligations that we owe directly to you
+        under applicable law.
+    </p>
+
+    <h2>17. Intellectual Property</h2>
+
+    <p>
+        The Application and its components, including
+        software, source code, design, layout, graphics,
+        logos, trademarks, text, visual elements, and
+        other materials, are owned by or licensed
+        to LifePilot AI.
+    </p>
+
+    <p>
+        These materials are protected by applicable
+        intellectual property laws.
+    </p>
+
+    <p>
+        Except for the limited licence granted under
+        these Terms, no rights are transferred to you.
+    </p>
+
+    <h2>18. Service Availability and Modifications</h2>
+
+    <p>
+        We aim to provide a reliable Service, but
+        we do not guarantee that the Service will
+        be uninterrupted, error-free, or available
+        at all times.
+    </p>
+
+    <p>
+        The Service may be temporarily unavailable
+        due to maintenance, updates, network failures,
+        third-party service interruptions, security
+        incidents, or circumstances beyond our
+        reasonable control.
+    </p>
+
+    <p>
+        Where a change materially affects a paid
+        feature or your contractual rights, we will
+        provide any notice, consent, or remedy
+        required by applicable law.
+    </p>
+
+    <h2>19. Suspension and Termination</h2>
+
+    <p>
+        You may stop using the Service at any time
+        and may request account deletion using
+        the available account deletion process.
+    </p>
+
+    <p>
+        We may suspend or terminate access where
+        reasonably necessary, including if you
+        materially violate these Terms, your use
+        is unlawful, your account presents a
+        security risk, or we are required to do
+        so by law.
+    </p>
+
+    <p>
+        Where appropriate and legally permitted,
+        we will provide notice and an opportunity
+        to resolve the issue.
+    </p>
+
+    <p>
+        We will not use suspension or termination
+        provisions to unlawfully deprive consumers
+        of paid services or mandatory rights.
+    </p>
+
+    <h2>20. Disclaimer of Warranties</h2>
+
+    <p>
+        To the maximum extent permitted by applicable
+        law, the Service is provided on an
+        "as available" basis.
+    </p>
+
+    <p>
+        We do not warrant that the Service will
+        always be available, error-free, accurate,
+        or compatible with every device.
+    </p>
+
+    <p>
+        Nothing in this section excludes or limits
+        warranties or statutory rights that cannot
+        lawfully be excluded or limited.
+    </p>
+
+    <h2>21. Limitation of Liability</h2>
+
+    <p>
+        To the maximum extent permitted by applicable
+        law, LifePilot AI will not be liable for
+        indirect, incidental, special, consequential,
+        exemplary, or punitive damages arising from
+        or relating to your use of the Service.
+    </p>
+
+    <p>
+        Nothing in these Terms excludes or limits
+        liability for death or personal injury
+        caused by negligence where such exclusion
+        is prohibited, fraud, or obligations and
+        liabilities that cannot be excluded
+        under applicable law.
+    </p>
+
+    <p>
+        If you are a consumer, the limitations
+        in this section apply only to the extent
+        permitted by the laws applicable to you.
+    </p>
+
+    <h2>22. Indemnification</h2>
+
+    <p>
+        To the extent permitted by applicable law,
+        you agree to be responsible for losses,
+        claims, liabilities, and expenses arising
+        from your unlawful use of the Service,
+        material violation of these Terms, or
+        infringement of third-party rights.
+    </p>
+
+    <p>
+        This provision does not apply to the extent
+        that the relevant loss results from our
+        own breach of law or conduct for which
+        we are legally responsible.
+    </p>
+
+    <h2>23. Changes to These Terms</h2>
+
+    <p>
+        We may update these Terms from time to time
+        due to changes in the Service, new features,
+        applicable law, security requirements,
+        or operational needs.
+    </p>
+
+    <p>
+        The updated Terms will be published with
+        a revised "Last updated" date.
+    </p>
+
+    <p>
+        Where required by law, we will provide
+        notice of material changes and obtain
+        consent where necessary.
+    </p>
+
+    <h2>24. Governing Law and Disputes</h2>
+
+    <p>
+        These Terms are governed by the laws of
+        [COUNTRY OF THE LEGAL OPERATOR], subject
+        to mandatory laws that apply to you.
+    </p>
+
+    <p>
+        If you are a consumer, you may benefit
+        from mandatory consumer protection laws
+        and jurisdictional rights in your
+        country of residence.
+    </p>
+
+    <p>
+        We encourage Users to contact us first
+        to attempt to resolve disputes informally.
+    </p>
+
+    <h2>25. Complaints and Customer Support</h2>
+
+    <p>
+        If you have a question, complaint, or
+        concern regarding the Service, you may
+        contact us using the details below.
+    </p>
+
     <div class="contact-box">
-        <p>📧 E-mail: <a href="mailto:assecurategrp@gmail.com" style="color: #244638;">assecurategrp@gmail.com</a></p>
-        <p>📞 Telefon: <a href="tel:+48788825188" style="color: #244638;">+48 788 825 188</a></p>
+        <p>
+            📧 Email:
+            <a href="mailto:assecurategrp@gmail.com">
+                assecurategrp@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📞 Telephone:
+            <a href="tel:+48788825188">
+                +48 788 825 188
+            </a>
+        </p>
+
+        <p>
+            📍 Registered address:
+            [FULL REGISTERED ADDRESS]
+        </p>
     </div>
 
-    <div class="lang-section">
-        <h1>Terms of Use / EULA (English Version)</h1>
-        <p>These Terms of Use govern your use of the mobile application <strong>LifePilot AI</strong>. By downloading or using the App, you agree to be bound by these terms.</p>
-        
-        <h2>1. Subscriptions and In-App Purchases</h2>
-        <p>LifePilot AI offers a Free tier and an optional auto-renewing PRO subscription. All payments and renewals are processed securely via <strong>Apple App Store</strong>, <strong>Google Play Store</strong>, and RevenueCat. Subscriptions renew automatically unless cancelled at least 24 hours prior to the end of the current period in your device's store settings. No free trial is offered unless explicitly stated. All refund requests must be handled directly through Apple or Google support.</p>
+    <h2>26. Severability</h2>
 
-        <h2>2. Disclaimer</h2>
-        <p>AI-generated financial, dietary, and lifestyle suggestions are for informational and organizational purposes only and do not constitute professional medical or financial advice.</p>
+    <p>
+        If any provision of these Terms is found
+        to be invalid, unlawful, or unenforceable,
+        that provision will be limited or removed
+        to the minimum extent necessary.
+    </p>
 
-        <h2>3. Contact</h2>
-        <p>If you have any questions, please contact us at <strong>assecurategrp@gmail.com</strong>.</p>
+    <p>
+        The remaining provisions will continue
+        to apply, unless applicable law requires
+        otherwise.
+    </p>
+
+    <h2>27. No Waiver</h2>
+
+    <p>
+        Our failure to enforce any provision
+        of these Terms does not constitute
+        a waiver of that provision or any
+        other right.
+    </p>
+
+    <h2>28. Entire Agreement</h2>
+
+    <p>
+        These Terms, together with the Privacy
+        Policy and any applicable additional
+        terms, constitute the agreement between
+        you and LifePilot AI concerning your
+        use of the Service.
+    </p>
+
+    <h2>29. Language</h2>
+
+    <p>
+        These Terms may be translated into
+        other languages.
+    </p>
+
+    <p>
+        If there is a conflict between the
+        English version and a translated
+        version, the version specified at
+        the time of acceptance will apply,
+        to the extent permitted by applicable law.
+    </p>
+
+    <h2>30. Contact Information</h2>
+
+    <p>
+        If you have any questions about these
+        Terms or the Service, please contact us:
+    </p>
+
+    <div class="contact-box">
+        <p><strong>LifePilot AI</strong></p>
+
+        <p>
+            Legal operator:
+            [FULL LEGAL NAME]
+        </p>
+
+        <p>
+            Registered address:
+            [FULL REGISTERED ADDRESS]
+        </p>
+
+        <p>
+            📧 Email:
+            <a href="mailto:assecurategrp@gmail.com">
+                assecurategrp@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📞 Telephone:
+            <a href="tel:+48788825188">
+                +48 788 825 188
+            </a>
+        </p>
+
+        <p>
+            Website:
+            <a href="[OFFICIAL WEBSITE URL]">
+                [OFFICIAL WEBSITE URL]
+            </a>
+        </p>
     </div>
+
+    <footer>
+        © 2026 LifePilot AI. All rights reserved.
+    </footer>
+
 </div>
 </body>
 </html>
